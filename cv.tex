@@ -3,7 +3,7 @@
 % \documentclass[10pt]{article} %Sets the default text size to 11pt and class to article.
 %------------------------Dimensions--------------------------------------------
 \pagenumbering{gobble}% Remove page numbers (and reset to 1)
-\topmargin=0.0in %length of margin at the top of the page (1 inch added by default)
+\topmargin=-43pt %length of margin at the top of the page (1 inch added by default)
 \oddsidemargin=0.0in %length of margin on sides for odd pages
 \evensidemargin=0in %length of margin on sides for even pages
 \textwidth=6.7in %How wide you want your text to be
@@ -34,22 +34,30 @@
 
 
 \noindent %Prevents the following text from being indented
-\\\\\\
+\\\\
 \vspace*{-6pt}
-{\negativespace \Large \bf Professional Experience}\\
+{\negativespace \Large \bf Recent Professional Experience}\\
 \line(1,0){485}
 \\
 \noindent
 
 \noindent
-{\bf Senior Web-Engineer}  \hfill \textit{From January 2022} \\
+{\bf Senior Software-Engineer}, \textit{employee at \href{https://dynatrace.com}{Dynatrace}}  \hfill \textit{from June 2022}
+\begin{itemize}
+\setlength\itemsep{0.05em}
+\item CLI tools to enhance developer experience when integrating dynatrace products (Node.js)
+\item VS Code Extension for assisting developers building dynatrace apps (TypeScript)\\
+\end{itemize}
+
+\noindent
+{\bf Senior Web-Engineer}  \hfill \textit{January - June 2022} \\
 {\bf Web-Engineer}, \textit{employee at \href{https://anyline.com}{Anyline GmbH}}  \hfill \textit{November 2018 - December 2021} 
 \begin{itemize}
 \setlength\itemsep{0.05em}
 \item Responsible for storing/structuring/retrieving a steady growing db of  \hfill Vienna, Austria \\ 
 millions new images/day, which are piped through ml ocr processes.
 \item Responsible for the core-backend design and implementation (NestJS)
-\item Responsible for the \href{https://github.com/Anyline/anyline-ocr-anylinejs-module}{ocr js SDK} development/releases (Typescript, wasm) \\
+\item Responsible for the \href{https://github.com/Anyline/anyline-ocr-anylinejs-module}{ocr js SDK} development/releases (TypeScript, wasm) \\
 \end{itemize}
 
 \noindent
@@ -79,18 +87,22 @@ millions new images/day, which are piped through ml ocr processes.
     (WebGL, WebRTC, ViewAR SDK)
     \item Developed an \href{https://www.youtube.com/watch?v=quE-erJ4PmU&t=113s}{editor} for 3D app assets (React, WebGL) \\
 \end{itemize}
+
+\noindent
+Rest of past experience on \href{https://linkedin.com/in/matthias-klan}{Linkedin} \\
+
 %\noindent
 %{\bf Unity-/Web-Developer}, \textit{freelancer at Sabotage Films}  \hfill \textit{ September -- November 2015 } \\ 
 %Augmented Reality in Unity, Virtual Reality using three.js\\\\
 %\noindent
 
-\noindent
-{\bf Web-Developer}, \textit{freelancer at \href{https://youtu.be/cs-IyI_erZo?t=16}{Immowire UG}}  \hfill \textit{July 2014 -- October 2015}
-\begin{itemize}
-    \setlength\itemsep{0.05em}
-\item Developed core-features for a social real estate  \href{https://youtu.be/cs-IyI_erZo?t=16}{platform} \hfill Remote from Vienna, Austria \\ 
-(AngularJS, WebSocket, Node.js/Sails, OrientDB)\\
-\end{itemize}
+% \noindent
+% {\bf Web-Developer}, \textit{freelancer at \href{https://youtu.be/cs-IyI_erZo?t=16}{Immowire UG}}  \hfill \textit{July 2014 -- October 2015}
+% \begin{itemize}
+%     \setlength\itemsep{0.05em}
+% \item Developed core-features for a social real estate  \href{https://youtu.be/cs-IyI_erZo?t=16}{platform} \hfill Remote from Vienna, Austria \\ 
+% (AngularJS, WebSocket, Node.js/Sails, OrientDB)\\
+% \end{itemize}
 
 %{\bf Java Tutor}, \textit{student assistent at THM}  \hfill \textit{ October 2013 -- February 2014 } \\ 
 %Teaching development\\\\
@@ -114,13 +126,13 @@ millions new images/day, which are piped through ml ocr processes.
 \textit{Technische Hochschule Mittelhessen (Thesis: Rnd of a Shopfront-Editor [backbonejs])}\\
 \\
 %\noindent
-\\\\
+\\
 \vspace*{-6pt}
 {\negativespace \Large \bf Skills}\\
 \line(1,0){485}\\
 \\
 \noindent
-{\bf Responsive Web-Apps } (\textit{Typescript, React, Vue, Svelte, Electron, WebRTC, WebGL}) \\
+{\bf Responsive Web-Apps } (\textit{TypeScript, React, Vue, Svelte, Electron, WebRTC, WebGL}) \\
 {\bf Distributed Web-Services } (\textit{Node.js, NestJS, Python, AMQP, CQRS, Redis, SQL/NoSQL, data warehouse}) \\
 {\bf API Design }(\textit{REST, GraphQL, openAPI, oAuth2}) \\
 {\bf Testing }(\textit{Jest, Puppeteer, device farms}) \\
