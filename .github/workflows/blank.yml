@@ -6,9 +6,9 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -24,23 +24,21 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      
+
       - name: Install deps
         run: sudo apt-get install -y texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra ghostscript
-        
+
       - name: render cv.pdf
         run: pdflatex cv.tex
-        
+
       - name: render cv.png
         run: gs -sDEVICE=png16m -dSAFER -dBATCH -dNOPAUSE -r600 -sOutputFile=cv.png cv.pdf
-        
+
       - name: Commit changes
         uses: EndBug/add-and-commit@v7
         with:
           branch: main
           branch_mode: create
-          message: 'rendered new version [skip ci]'
-          add: '*.pdf *.png'
-
-
-
+          message: "rendered new version [skip ci]"
+          add: "*.pdf *.png"
+          token: ${{ secrets.GH_TOKEN }}
