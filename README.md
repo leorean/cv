@@ -1,9 +1,7 @@
-![Curriculum Vitae of Jonas Laux](https://github.com/JonasLaux/cv/blob/main/cv.png?raw=true)
+![Curriculum Vitae of Jonas Laux](https://jonaslaux.github.io/cv.png)
 ---
 
-[![CI](https://github.com/JonasLaux/cv/actions/workflows/blank.yml/badge.svg)](https://github.com/JonasLaux/cv/actions/workflows/blank.yml)
-
-[Download PDF](https://github.com/JonasLaux/cv/raw/main/cv.pdf)
+[Download PDF](https://jonaslaux.github.io/cv.pdf)
 
 You can fork this repo and use it as a framework for your personal CV.
 
