@@ -25,7 +25,7 @@ jobs:
         run: gs -sDEVICE=png16m -dSAFER -dBATCH -dNOPAUSE -r600 -sOutputFile=cv.png cv.pdf
       - name: Copy cv files to output
         run: mkdir output && cp cv.png output/cv.png && cp cv.pdf output/cv.pdf
-      - name: Pushes to another repository
+      - name: Push to User Github Page
         uses: cpina/github-action-push-to-another-repository@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
