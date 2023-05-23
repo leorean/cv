@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install deps
+        run: sudo apt-get install -y texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra ghostscript
+
+      - name: render cv.pdf
+        run: pdflatex cv.tex
+
+      - name: render cv.png
+        run: gs -sDEVICE=png16m -dSAFER -dBATCH -dNOPAUSE -r600 -sOutputFile=cv.png cv.pdf
+      - name: Copy cv files to output
+        run: mkdir output && cp cv.png output/cv.png && cp cv.pdf output/cv.pdf
+      - name: Pushes to another repository
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: "output"
+          destination-github-username: "JonasLaux"
+          destination-repository-name: "JonasLaux.github.io"
+          user-email: me@jonas-laux.com
+          target-branch: main
