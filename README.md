@@ -1,7 +1,7 @@
-![Curriculum Vitae of Jonas Laux](https://jonaslaux.github.io/cv.png)
+![Curriculum Vitae of Peter Sperl](https://leorean.github.io/cv.png)
 ---
 
-[Download PDF](https://jonaslaux.github.io/cv.pdf)
+[Download PDF](https://leorean.github.io/cv.pdf)
 
 You can fork this repo and use it as a framework for your personal CV.
 
