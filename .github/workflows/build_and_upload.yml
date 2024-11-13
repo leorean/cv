@@ -33,7 +33,7 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           source-directory: "output"
-          destination-github-username: "JonasLaux"
-          destination-repository-name: "JonasLaux.github.io"
-          user-email: me@jonas-laux.com
+          destination-github-username: "leorean"
+          destination-repository-name: "leorean.github.io"
+          user-email: leorean@hotmail.com
           target-branch: main
