@@ -14,18 +14,18 @@
  
 \usepackage{xcolor}
 
-\definecolor{linkcolor}{RGB}{105,0,0}
+\definecolor{linkcolor}{RGB}{0,120,212}  % Microsoft blue (#0078D4)
 
 \usepackage[utf8]{inputenc}
-\usepackage[colorlinks=true,urlcolor=linkcolor]{hyperref}
+\usepackage[colorlinks=true,urlcolor=linkcolor,linkcolor=linkcolor]{hyperref}
 
 \newcommand\tab[1][1cm]{\hspace*{#1}}
 \newcommand\smallspace[1][0.23cm]{\hspace*{#1}}
 \newcommand\negativespace[1][-0.12cm]{\hspace*{#1}}
 
-%\usepackage[T1]{fontenc} 
-%\usepackage{libertine}
-
+% Arial setup
+\usepackage[scaled]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
 
 \begin{document}
 
@@ -44,7 +44,7 @@
 \noindent
 
 \noindent
-{\bf Senior Engineer \& Team Lead}, \textit{employee at \href{https://anyline.com}{Anyline}} \hfill \textit{2022 -- Present}
+{\bf Senior Engineer \& Team Lead}, \textit{\href{https://anyline.com}{Anyline}} \hfill \textit{2022 -- Present}
 \begin{itemize}
 \setlength\itemsep{0.05em}
 \item Led cross-functional development team responsible for mobile, desktop (C\texttt{\#}), browser-based (C\texttt{++} and WebAssembly) \& server-based (NestJS) scanning solutions
@@ -55,16 +55,16 @@
 
 
 \noindent
-{\bf Senior Engineer}  \hfill \textit{2020 -- 2022} 
+{\bf Senior Engineer}, \textit{\href{https://anyline.com}{Anyline}} \hfill \textit{2020 -- 2022} 
 \begin{itemize}
 \setlength\itemsep{0.05em} 
 \item Built a C\texttt{++} framework for platform-independent scanning, reducing development time and standardizing capabilities across all platforms
 \item Led UWP SDK development to overhaul cross-platform architecture, improving performance, robustness, and ease of integration for customers
-\item Led development of patented technology for \href{https://anyline.com/news/rapid-ai-with-closed-loop-training}{over-the-air deployment}, allowing continuous retraining of computer vision and ML models to enhance accuracy using new, real-world data.
+\item Led development of \href{https://anyline.com/news/rapid-ai-with-closed-loop-training}{patented technology} for over-the-air deployment
 \end{itemize}
 
 \noindent
-{\bf C\texttt{++} \& C\texttt{\#} Engineer} \hfill \textit{2015 -- 2020}
+{\bf C\texttt{++} \& C\texttt{\#} Engineer}, \textit{\href{https://anyline.com}{Anyline}} \hfill \textit{2015 -- 2020}
 \begin{itemize}
 \setlength\itemsep{0.05em}
 \item Built the \href{https://github.com/Anyline/anyline-ocr-xamarin-module}{Xamarin SDK} for Android and iOS
@@ -87,6 +87,7 @@
 \begin{itemize}
 \item \href{https://github.com/leorean/GMStudio}{Vast collection} of 50+ Game Maker-based prototypes
 \item \href{https://github.com/leorean/SPG}{SPG} - A XNA-based SDK for game development
+\item Level design for \href{https://ovos.at/de/projekte/cure-runners-ein-spiel-uber-geld-ohne-geld/}{Cure Runners}
 \end{itemize}
 \textbf{Hackathon Participant}: Regular participant in game jams and coding competitions (15+ events)
 \begin{itemize}
@@ -102,11 +103,11 @@
 \line(1,0){485}\\
 \\
 \noindent
-{\bf Master of Science - Medical Informatics} (thesis not submitted) \hfill \textit{2013 - 2015} \\
-\textit{Technische Universität Wien} \\
-\\
 {\bf Bachelor of Science - Medical Informatics} \hfill \textit{2008 - 2013} \\
 \textit{Technische Universität Wien} \\
+\\
+\\
+\\
 \\
 \\
 \\
