@@ -1,19 +1,17 @@
 \documentclass[9pt]{extarticle}
 
-% \documentclass[10pt]{article} %Sets the default text size to 11pt and class to article.
 %------------------------Dimensions--------------------------------------------
-\pagenumbering{gobble}% Remove page numbers (and reset to 1)
-\topmargin=-20pt %length of margin at the top of the page (1 inch added by default)
-\oddsidemargin=0.0in %length of margin on sides for odd pages
-\evensidemargin=0in %length of margin on sides for even pages
-\textwidth=6.7in %How wide you want your text to be
+\pagenumbering{gobble}
+\topmargin=-20pt
+\oddsidemargin=0.0in
+\evensidemargin=0in
+\textwidth=6.7in
 \marginparwidth=0.5in
-\headheight=0pt %1in margins at top and bottom (1 inch is added to this value by default)
-\headsep=0pt %Increase to increase white space in between headers and the top of the page
-\textheight=9.5in %How tall the text body is allowed to be on each page
- 
-\usepackage{xcolor}
+\headheight=0pt
+\headsep=0pt
+\textheight=9.5in
 
+\usepackage{xcolor}
 \definecolor{linkcolor}{RGB}{0,120,212}  % Microsoft blue (#0078D4)
 
 \usepackage[utf8]{inputenc}
@@ -28,51 +26,48 @@
 \renewcommand{\familydefault}{\sfdefault}
 
 \begin{document}
-
+	
 \centerline{{\LARGE \bf Peter Sperl, B.Sc.}}
 \centerline{\href{mailto:peter.sperl@outlook.com}{peter.sperl@outlook.com}}
-\centerline{\href{https://github.com/leorean}{Github}}
-\centerline{\href{https://www.linkedin.com/in/peter-sperl}{LinkedIn}}
+\centerline{\href{https://github.com/leorean}{Github} \,|\, \href{https://www.linkedin.com/in/peter-sperl}{LinkedIn}}
 
 
 \noindent %Prevents the following text from being indented
-\\\\
+\\
 \vspace*{-6pt}
 {\negativespace \Large \bf Recent Professional Experience}\\
-\line(1,0){485}
-\\
-\noindent
+\line(1,0){485}\\
+\vspace*{3pt}
 
-\noindent
 {\bf Senior Engineer \& Team Lead}, \textit{\href{https://anyline.com}{Anyline}} \hfill \textit{2022 -- Present}
 \begin{itemize}
-\setlength\itemsep{0.05em}
-\item Led cross-functional development team responsible for mobile, desktop (C\texttt{\#}), browser-based (C\texttt{++} and WebAssembly) \& server-based (NestJS) scanning solutions
-\item Reshaped browser-based C\texttt{++} engine, streamlining feature delivery between platforms
-\item Optimized CI/CD pipeline for faster deployments and automated testing
-\item Redesigned legacy C\texttt{++} monitoring module, improving stability and scalability
+	\setlength\itemsep{0.05em}
+	\item Lead a cross-functional engineering team delivering high-performance scanning solutions across mobile, desktop (C\texttt{\#}), browser (C\texttt{++}/WebAssembly), and server (NestJS) platforms.
+	\item Modernized the browser-based C\texttt{++} engine architecture, unifying the codebase and accelerating cross-platform feature delivery.
+	\item Optimized CI/CD pipelines, reducing deployment times and increasing automated test coverage.
+	\item Re-engineered the legacy C\texttt{++} monitoring module for improved stability, scalability, and maintainability.	
 \end{itemize}
 
-
-\noindent
-{\bf Senior Engineer}, \textit{\href{https://anyline.com}{Anyline}} \hfill \textit{2020 -- 2022} 
+{\bf Senior Engineer}, \textit{\href{https://anyline.com}{Anyline}} \hfill \textit{2020 -- 2022}
 \begin{itemize}
-\setlength\itemsep{0.05em} 
-\item Built a C\texttt{++} framework for platform-independent scanning, reducing development time and standardizing capabilities across all platforms
-\item Led UWP SDK development to overhaul cross-platform architecture, improving performance, robustness, and ease of integration for customers
-\item Led development of \href{https://anyline.com/news/rapid-ai-with-closed-loop-training}{patented technology} for over-the-air deployment
+	\setlength\itemsep{0.05em}
+	\item Designed and implemented a C\texttt{++} framework for platform-independent scanning — reducing internal development time by 60\% and standardizing capabilities across multiple platforms.
+	\item Led the architecture overhaul of the UWP SDK, improving performance, robustness, and developer usability.
+	\item Developed a \href{https://patents.google.com/patent/US20220327849A1/en}{patented over-the-air deployment system}, enabling closed-loop ML model updates in production.
+	\item Architected \& enhanced SDK licensing module for improved security, stability and advanced feature control.
 \end{itemize}
 
-\noindent
 {\bf C\texttt{++} \& C\texttt{\#} Engineer}, \textit{\href{https://anyline.com}{Anyline}} \hfill \textit{2015 -- 2020}
 \begin{itemize}
-\setlength\itemsep{0.05em}
-\item Built the \href{https://github.com/Anyline/anyline-ocr-xamarin-module}{Xamarin SDK} for Android and iOS
-\item Ported the C\texttt{++} engine to Windows and created a C\texttt{++}/C\texttt{\#} bridge for seamless UWP integration
-\item Built the \href{https://github.com/Anyline/anyline-ocr-examples-windows-uwp}{UWP SDK} in C\texttt{\#}
+	\setlength\itemsep{0.05em}
+	\item Ported TensorFlow to Windows x86/ARM architecture, enabling ML inference on embedded and mobile devices.
+	\item Created the Anyline OCR Xamarin SDK for Android and iOS, powering real-time on-device text recognition.
+	\item Ported the C\texttt{++} computer vision \& machine learning processing engine to Windows via C\texttt{++}/C\texttt{\#} bridge, enabling on-device OCR scanning on Windows-based devices.
+	\item Developed a Unity-based HoloLens prototype for real-time recognition of serial numbers and utility meters in AR/MR environments.
+	\item Developed, published and maintained \href{https://github.com/Anyline/anyline-ocr-examples-windows-uwp}{Anyline UWP SDK}.
+	\item Designed \& optimized python-based image augmentation to provide datasets for training OCR models.
 \end{itemize}
-
-
+	
 \noindent %Prevents the following text from being indented
 \\
 \\
@@ -80,22 +75,23 @@
 {\negativespace \Large \bf Projects \& Developer Community Engagement}\\
 \line(1,0){485}
 \\
-\noindent
-
-\noindent
-\textbf{Game Development:} Created multiple indie games using Unity, Monogame, Game Maker Studio and other frameworks
+\\
+\textbf{Game Development:} Developed multiple games \& projects using Unity, MonoGame, and Game Maker Studio.
 \begin{itemize}
-\item \href{https://github.com/leorean/GMStudio}{Vast collection} of 50+ Game Maker-based prototypes
-\item \href{https://github.com/leorean/SPG}{SPG} - A XNA-based SDK for game development
-\item Level design for \href{https://ovos.at/de/projekte/cure-runners-ein-spiel-uber-geld-ohne-geld/}{Cure Runners}
-\end{itemize}
-\textbf{Hackathon Participant}: Regular participant in game jams and coding competitions (15+ events)
-\begin{itemize}
-\item \href{https://ldjam.com/events/ludum-dare/55/tao}{Tao} - 8th overall place out of 2000+ submissions (written in LUA \& pico8)
-\item \href{https://www.newgrounds.com/portal/view/599044}{Llama in your Face} - A browser game reaching over 6 million players worldwide
-\item \href{https://ldjam.com/users/leorean/games}{Other Game Submissions}
+	\setlength\itemsep{0.05em}
+	\item Developed a \href{https://github.com/leorean/GMStudio}{collection of 50+ Game Maker prototypes} exploring gameplay, AI, and rendering techniques.
+	\item Created \href{https://github.com/leorean/SPG}{SPG}, an XNA-based SDK for rapid 2D game development.
+	\item Level design for \href{https://ovos.at/de/projekte/cure-runners-ein-spiel-uber-geld-ohne-geld/}{Cure Runners}, a gamified learning experience.
 \end{itemize}
 
+\textbf{Hackathon Participation:} Active competitor in 15+ international coding competitions and game jams.
+\begin{itemize}
+	\setlength\itemsep{0.05em}
+	\item \href{https://ldjam.com/events/ludum-dare/55/tao}{Tao} – placed 8th overall (out of 2000+) in Ludum Dare; made in LUA/pico8.
+	\item \href{https://www.newgrounds.com/portal/view/599044}{Llama in Your Face} – browser game reaching 6M+ players globally.
+	\item Additional submissions available \href{https://ldjam.com/users/leorean/games}{here}.
+\end{itemize}
+	
 \noindent %Prevents the following text from being indented
 \\
 \vspace*{-6pt}
@@ -107,18 +103,8 @@
 \textit{Technische Universität Wien} \\
 \\
 \\
-\\
-\\
-\\
-\\
-\\
-\\
-\\
-\\
-\\
-\noindent
-{\bf Technologies \& Frameworks:} .NET, UWP, WPF, Unity, Xamarin, XNA, Monogame, Game Maker Studio, GCP \\
-{\bf Languages:} C\texttt{\#}, C\texttt{++}, Python, Java, LUA, GML (Game Maker Language)
-
-
+{\bf Languages:} Modern C\texttt{++} (C\texttt{++17}/C\texttt{++20}), C\texttt{\# 12}, Python, Java, LUA, GML \\
+{\bf Frameworks \& Tools:} TensorFlow, OpenCV, CMake, Conan, .NET 8, UWP, WPF, Unity, Xamarin, XNA, MonoGame, Game Maker Studio, GCP \\
+{\bf Expertise:} Cross-platform C\texttt{++} development, performance optimization, real-time computer vision, SDK architecture, CI/CD automation, AR/VR prototyping
+	
 \end{document}
